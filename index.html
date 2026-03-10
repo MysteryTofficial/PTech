@@ -964,6 +964,20 @@
             }, 100);
         });
     </script>
+    <script>
+const form = document.getElementById('9f60609d-dd21-47cf-8747-508ad0e24e2d');
+
+form.addEventListener('submit', function(e) {
+
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field")
+        return
+    }
+});
+</script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
